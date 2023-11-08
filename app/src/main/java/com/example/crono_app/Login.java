@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.crono_app.Inicio;
+        import com.example.crono_app.Inicio;
 
 public class Login extends AppCompatActivity {
     EditText Password, Email;
@@ -30,7 +30,7 @@ public class Login extends AppCompatActivity {
         Entrar = findViewById(R.id.entrar);
 
         // Inicializa tu base de datos aquí, por ejemplo:
-        database = openOrCreateDatabase("Usuarios", MODE_PRIVATE, null);
+        database = openOrCreateDatabase("Cronoudec.bd", MODE_PRIVATE, null);
 
         Entrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
                 String password = Password.getText().toString();
 
                 // Realiza la consulta en la base de datos
-                Cursor cursor = database.rawQuery("SELECT * FROM tabla_usuarios WHERE email = ? AND password = ?",
+                Cursor cursor = database.rawQuery("SELECT * FROM Usuarios WHERE CORREO = ? AND CONTRASENA = ?",
                         new String[]{email, password});
 
                 if (cursor.moveToFirst()) {
