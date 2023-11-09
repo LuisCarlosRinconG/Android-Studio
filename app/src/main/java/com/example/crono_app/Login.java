@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity {
         Password = findViewById(R.id.password);
         Entrar = findViewById(R.id.entrar);
 
-        // Inicializa tu base de datos aquí, por ejemplo:
+
         database = openOrCreateDatabase("Cronoudec.bd", MODE_PRIVATE, null);
 
         Entrar.setOnClickListener(new View.OnClickListener() {
