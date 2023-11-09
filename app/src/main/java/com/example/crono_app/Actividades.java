@@ -6,7 +6,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class Actividades {
+public class Actividades extends SQLiteOpenHelper{
 
     private static final String BDD="Trabajo.bd";
     private static final int versionN=1;
