@@ -10,13 +10,13 @@
         android:id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#3D785F"
+        android:background="#5EA38B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/inicio"
@@ -44,11 +44,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scrollbarSize="12dp"
-        android:text="Bienvenido a Crono-UDEC"
+        android:text="Bienvenido a TimeWork"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.261" />
+        app:layout_constraintVertical_bias="0.196" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="217dp"
+        android:layout_height="218dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.391"
+        app:srcCompat="@drawable/calendario" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="288dp"
+        android:layout_height="64dp"
+        android:text="Una aplicación para que lleves un registro de los días que trabajas de manera informal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.169" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

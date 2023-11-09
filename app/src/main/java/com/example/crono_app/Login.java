@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-        import com.example.crono_app.Inicio;
+import com.example.crono_app.Inicio;
 
 public class Login extends AppCompatActivity {
     EditText Password, Email;
